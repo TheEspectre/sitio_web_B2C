@@ -1,0 +1,36 @@
+/* Estilos específicos para la página de menú */
+
+#menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 50px; /* Ajusta el valor según sea necesario para evitar que el footer tape las tarjetas */
+}
+
+.tarjeta {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+}
+
+.tarjeta img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.ingredientes {
+    font-style: italic;
+    color: #555;
+}
+
+/* ... (otros estilos específicos) ... */

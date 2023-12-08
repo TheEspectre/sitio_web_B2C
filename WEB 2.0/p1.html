@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/p1.css" />
+    <title>Tienda de Comida Saludable</title>
+  </head>
+  <body>
+    <header>
+      <h1>Cocina Vital</h1>
+      <nav>
+        <ul>
+          <li><a href="p1.html">Inicio</a></li>
+          <li><a href="servicio.html">Servicio</a></li>
+          <li><a href="menu.html">Menú</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="inicio">
+      <div class="contenido">
+        <div class="texto">
+          <h2>Llevamos comida saludable a tu mesa</h2>
+          <p>Personas extraordinarias se merecen comida extraordinaria.</p>
+          <a href="servicio.html">
+            <button>Explorar</button>
+          </a>
+        </div>
+        <div class="imagen">
+          <img
+            id="imagenBanner"
+            src="img/imagen1.jpg"
+            alt="Banner de la tienda"
+          />
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Tienda de Comida Saludable</p>
+    </footer>
+
+    <script src="p1.js"></script>
+    <script>
+      const imagenes = [
+        "img/imagen1.jpg",
+        "img/imagen2.jpg",
+        "img/imagen3.jpg",
+        "img/imagen4.jpg",
+        "img/imagen5.jpg",
+        "img/imagen6.jpg",
+        "img/imagen7.jpg",
+        "img/imagen8.jpg",
+        "img/imagen9.jpg",
+        "img/imagen10.jpg",
+        "img/imagen11.jpg",
+        "img/imagen12.jpg"
+      ];
+      let indiceImagen = 0;
+
+      function cambiarImagen() {
+        const imagenBanner = document.getElementById("imagenBanner");
+        imagenBanner.src = imagenes[indiceImagen];
+
+        indiceImagen = (indiceImagen + 1) % imagenes.length;
+      }
+
+      // Cambia la imagen cada 2 segundos (2000 milisegundos)
+      setInterval(cambiarImagen, 2000);
+    </script>
+  </body>
+</html>

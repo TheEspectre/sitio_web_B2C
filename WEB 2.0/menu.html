@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/p1.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+
+    <title>Menú - Tienda de Comida Saludable</title>
+  </head>
+  <body>
+    <header>
+      <h1>Cocina Vital</h1>
+      <nav>
+        <ul>
+          <li><a href="p1.html">Inicio</a></li>
+          <li><a href="servicio.html">Servicio</a></li>
+          <li><a href="menu.html">Menú</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="menu">
+      <!-- Contenido del menú se añadirá aquí -->
+      <!-- Contenido del menú -->
+      <div class="tarjeta">
+        <img src="img/imagen1.jpg" alt="Platillo 1" />
+        <h2>Albóndigas de res en salsa de chipotle</h2>
+        <p>
+          Carne molida de res con hierbabuena, cebolla, ajo, un toque de comino
+          y canela en salsa de chipotle.
+        </p>
+        <p class="ingredientes">
+          <strong>Ingredientes:</strong> carne molida de res, cebolla, chile
+          chipotle, perejil, tallo de cebollita cambray, pan molido, canela,
+          comino, perejil, mostaza, salsa inglesa, salsa Maggi, hierbabuena, sal
+          y aceite vegetal.
+        </p>
+        <p><strong>Precio:</strong> $216.00</p>
+        <button
+          onclick="agregarAlCarrito('Albóndigas de res en salsa de chipotle', 216.00)"
+        >
+          Comprar
+        </button>
+      </div>
+
+      <div class="tarjeta">
+        <!-- Otras tarjetas de menú -->
+        <img src="img/imagen2.jpg" alt="Platillo 2" />
+        <h2>Chicken Kung Pao</h2>
+        <p>
+          Pechuga de pollo a la parrilla y vegetales
+          marinados en salsa soya, aceite de ajonjolí, miel de abeja y salsa
+          picante.
+        </p>
+        <p class="ingredientes">
+          <strong>Ingredientes:</strong> pechuga de pollo, pimiento rojo,
+          pimiento verde, zanahoria, calabaza, salsa soya, apio, ajo, chile
+          guajillo, miel de abeja, aceite de ajonjolí, salsa picante.
+        </p>
+        <p><strong>Precio:</strong> $198.00</p>
+        <button onclick="agregarAlCarrito('Chicken Kung Pao', 198.00)">
+          Comprar
+        </button>
+      </div>
+
+      <div class="tarjeta">
+        <!-- Otras tarjetas de menú -->
+        <img src="img/imagen3.jpg" alt="Platillo 3" />
+        <h2>Bisteces a la mexicana</h2>
+        <p>
+          Fajita de res a la plancha acompañado de una salsa de jitomate,
+          jalapeños, cebolla, orégano y chiles en vinagre.
+        </p>
+        <p class="ingredientes">
+          <strong>Ingredientes:</strong> fajita de res, cebolla, jitomate, chile
+          jalapeño, chiles en vinagre, orégano, laurel, tomillo, ajo, aceite y
+          sal.
+        </p>
+        <p><strong>Precio:</strong> $246.00</p>
+        <button onclick="agregarAlCarrito('Bisteces a la mexicana', 246.00)">
+          Comprar
+        </button>
+      </div>
+
+      <div class="tarjeta">
+        <!-- Otras tarjetas de menú -->
+        <img src="img/imagen4.jpg" alt="Platillo 4" />
+        <h2>Caldo de pollo con verduras</h2>
+        <p>Caldo con pechuga de pollo con verduritas al vapor y cilantro.</p>
+        <p class="ingredientes">
+          <strong>Ingredientes:</strong> Pechuga de pollo, calabaza, chayote,
+          zanahoria, ejote, cilantro, ajo, sal y aceite vegetal.
+        </p>
+        <p><strong>Precio:</strong> $115.00</p>
+        <button
+          onclick="agregarAlCarrito('Caldo de pollo con verduras', 115.00)"
+        >
+          Comprar
+        </button>
+      </div>
+
+      <div class="tarjeta">
+        <!-- Otras tarjetas de menú -->
+        <img src="img/imagen5.jpg" alt="Platillo 5" />
+        <h2>Tinga de pollo</h2>
+        <p>Pechuga de pollo cocinada en caldillo de jitomate y chipotle.</p>
+        <p class="ingredientes">
+          <strong>Ingredientes:</strong> pechuga de pollo, cebolla, col,
+          jitomate, chile chipotle, ajo, orégano, tomillo, laurel, aceite de
+          canola y sal.
+        </p>
+        <p><strong>Precio:</strong> $224.00</p>
+        <button onclick="agregarAlCarrito('Tinga de pollo', 224.00)">
+          Agregar al carrito
+        </button>
+      </div>
+
+      <div class="tarjeta">
+        <!-- Otras tarjetas de menú -->
+        <img src="img/imagen6.jpg" alt="Platillo 6" />
+        <h2>Pechuga de pollo en salsa de albahaca</h2>
+        <p>
+          Pechuga de pollo a la plancha aderezada hierbas finas salteada en
+          salsa de albahaca y jitomate.
+        </p>
+        <p class="ingredientes">
+          <strong>Ingredientes:</strong> pechuga de pollo, jitomate, ajo,
+          albahaca, romero, tomillo, orégano, aceite de canola, sal y pimienta.
+        </p>
+        <p><strong>Precio:</strong> $224.00</p>
+        <button
+          onclick="agregarAlCarrito('Pechuga de pollo en salsa de albahaca', 224.00)"
+        >
+          Agregar al carrito
+        </button>
+      </div>
+
+      <div class="tarjeta">
+        <!-- Otras tarjetas de menú -->
+        <img src="img/imagen7.jpg" alt="Platillo 7" />
+        <h2>Fajita de res</h2>
+        <p>Fajitas de res salteadas con pimientos asados.</p>
+        <p class="ingredientes">
+          <strong>Ingredientes:</strong> bistec de res, cebolla, salsa inglesa,
+          salsa maggie, pimiento morrón rojo, pimiento morrón verde, salsa soya,
+          ajo y aceite.
+        </p>
+        <p><strong>Precio:</strong> $246.00</p>
+        <button onclick="agregarAlCarrito('Fajita de res', 246.00)">
+          Agregar al carrito
+        </button>
+      </div>
+
+      <div class="tarjeta">
+        <!-- Otras tarjetas de menú -->
+        <img src="img/imagen8.jpg" alt="Platillo 8" />
+        <h2>Pechuga de pollo pibil</h2>
+        <p>
+          Pechuga de pollo cocida lentamente en mezcla de jugo de naranja,
+          achiote, chile guajillo, cebolla, orégano y ajo.
+        </p>
+        <p class="ingredientes">
+          <strong>Ingredientes:</strong> pechuga de pollo, achiote, vinagre,
+          jugo de naranja, jitomate, chile guajillo, pimienta gorda, canela,
+          cebolla, ajo, orégano, aceite de canola y sal.
+        </p>
+        <p><strong>Precio:</strong> $224.00</p>
+        <button onclick="agregarAlCarrito('Pechuga de pollo pibil', 224.00)">
+          Agregar al carrito
+        </button>
+      </div>
+
+      <div class="tarjeta">
+        <!-- Otras tarjetas de menú -->
+        <img src="img/imagen9.jpg" alt="Platillo 9" />
+        <h2>Fusilli con salsa de albahaca</h2>
+        <p>
+          Pasta al dente bañada en salsa de albahaca perfumada con diferentes
+          especias.
+        </p>
+        <p class="ingredientes">
+          <strong>Ingredientes:</strong> pasta, jitomate, albahaca, romero, ajo,
+          tomillo, orégano, laurel, aceite de canola, sal y pimienta.
+        </p>
+        <p><strong>Precio:</strong> $76.00</p>
+        <button
+          onclick="agregarAlCarrito('Fusilli con salsa de albahaca', 76.00)"
+        >
+          Agregar al carrito
+        </button>
+      </div>
+
+      <div class="tarjeta">
+        <!-- Otras tarjetas de menú -->
+        <img src="img/imagen10.jpg" alt="Platillo 10" />
+        <h2>Hamburguesa veggie</h2>
+        <p>
+          Mezcla de calabaza, zanahoria, lentejas, garbanzo, huevo y perejil. Se
+          cocina en el horno y se termina de cocinar con un poco de aceite para
+          darle un toque crujiente.
+        </p>
+        <p class="ingredientes">
+          <strong>Ingredientes:</strong> lenteja, zanahoria, calabaza,
+          garbanzos, huevo, chía, pan molido, perejil, cebolla, aceite y sal.
+        </p>
+        <p><strong>Precio:</strong> $65.00</p>
+        <button onclick="agregarAlCarrito('Hamburguesa veggie', 65.00)">
+          Agregar al carrito
+        </button>
+      </div>
+
+      <div class="tarjeta">
+        <!-- Otras tarjetas de menú -->
+        <img src="img/imagen11.jpg" alt="Platillo 11" />
+        <h2>Pechuga de pollo con pimiento</h2>
+        <p>Pechuga de pollo a la plancha salteada con pimientos asados.</p>
+        <p class="ingredientes">
+          <strong>Ingredientes:</strong> pechuga de pollo, pimiento morrón,
+          cebolla, salsa ingelsa, salsa maggi, salsa soya, ajo y aceite.
+        </p>
+        <p><strong>Precio:</strong> $89.00</p>
+        <button
+          onclick="agregarAlCarrito('Pechuga de pollo con pimiento', 89.00)"
+        >
+          Agregar al carrito
+        </button>
+      </div>
+
+      <div class="tarjeta">
+        <!-- Otras tarjetas de menú -->
+        <img src="img/imagen12.jpg" alt="Platillo 12" />
+        <h2>Sopa de fideo</h2>
+        <p>
+          Fideos cocidos y dorados en un poco de aceite con caldillo de
+          jitomate, chile serrano y consomé de pollo. Acompañamos con papa y
+          zanahoria hervidas.
+        </p>
+        <p class="ingredientes">
+          <strong>Ingredientes:</strong> fideo, jitomate, papa, zanahoria,
+          cebolla, chile serrano, cilantro, laurel, ajo, consomé de pollo y
+          aceite de canola
+        </p>
+        <p><strong>Precio:</strong> $41.00</p>
+        <button onclick="agregarAlCarrito('Sopa de fideo', 41.00)">
+          Agregar al carrito
+        </button>
+      </div>
+    </section>
+  </body>
+</html>

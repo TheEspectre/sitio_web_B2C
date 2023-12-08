@@ -1,0 +1,91 @@
+/* Estilos generales */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos para la sección de inicio */
+
+#inicio {
+    padding: 50px;
+}
+
+.contenido {
+    display: flex;
+    justify-content: space-between;
+}
+
+.texto {
+    flex: 1;
+    max-width: 60%; /* Ajusta según sea necesario */
+}
+
+.texto h2 {
+    font-size: 3em; /* Tamaño de letra más grande */
+    margin-bottom: 20px; /* Espacio adicional entre el título y el párrafo */
+}
+
+.texto p {
+    font-size: 1.5em; /* Tamaño de letra más grande */
+}
+
+.texto button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px; /* Ajusta el tamaño del botón según sea necesario */
+    font-size: 1.2em; /* Tamaño de letra más grande */
+    border: none;
+    cursor: pointer;
+}
+
+.imagen {
+    flex: 1;
+    text-align: right;
+    margin-right: 100px; /* Ajusta la distancia desde el lado derecho */
+}
+
+.imagen img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 8px;
+}
